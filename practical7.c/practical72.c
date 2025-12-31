@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main(){
+
+     // Name : David Patle
+    // ERP : 10444
+    //Practical 7 : Q.2.Hourglass of length 2n-1//
+    int n;
+    scanf("%d",&n);
+    for(int i=n;i>=1;i--){
+        for(int j=1;j<=n-i;j++){
+            printf(" ");
+        }
+        for(int s=1;s<=2*i-1;s++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(int i=2;i<=n;i++){
+        for(int j=1;j<=n-i;j++){
+            printf(" ");
+        }
+        for(int s=1;s<=2*i-1;s++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+// output :-
+// 6
+// ***********
+//  *********
+//   *******
+//    *****
+//     ***
+//      *
+//     ***
+//    *****
+//   *******
+//  *********
+// ***********
